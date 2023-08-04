@@ -6,6 +6,9 @@ metadata:
     openshift.io/display-name: fraud-detection
     serving.kserve.io/deploymentMode: ModelMesh
   name: fraud-detection
+  labels:
+    name: fraud-detection
+    opendatahub.io/dashboard: 'true'
 spec:
   predictor:
     model:
